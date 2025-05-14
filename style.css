@@ -1,0 +1,117 @@
+  body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: #f0f0f0;
+        }
+
+
+        .container {
+            width: 21cm;
+            height: 29.7cm;
+            padding: 1cm;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            background-color: white;
+        }
+
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .header-esquerda {
+            flex: 2;
+        }
+
+        .header-direita {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .header-direita p {
+            margin: 5px 0;
+        }
+
+        .header-direita hr {
+            margin: 5px 0;
+            border: none;
+            border-top: 1px solid #ddd;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 20px 0;
+        }
+
+        .info {
+            margin-bottom: 20px;
+        }
+
+        .campo {
+            margin-bottom: 10px;
+        }
+
+        .campo input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #9da19d;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-right: 10px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #8d8f8d;
+        }
+
+        #relatorio {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            visibility: hidden;
+            position: absolute;
+
+        }
+
+        @media print {
+            button {
+                display: none;
+            }
+
+            #relatorio {
+                visibility: visible !important;
+                position: static !important;
+                border: none;
+                background: none;
+                page-break-before: always;  
+            }
+
+            body {
+                background-color: white;
+            }
+
+            .container {
+                box-shadow: none;
+            }
+        }
