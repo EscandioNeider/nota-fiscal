@@ -10,5 +10,5 @@ No site, é possível preencher as informações de forma prática e interativa.
 - 👁️ Visualizar uma prévia do relatório;
 - 🖨️ Imprimir diretamente a nota fiscal.
 
-🔗 Acesse o projeto: [Nota Fiscal]()
+🔗 Acesse o projeto: [Nota Fiscal](https://escandioneider.github.io/nota-fiscal/)
 
